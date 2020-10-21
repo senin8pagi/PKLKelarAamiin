@@ -56,10 +56,10 @@
             <?php $i = 1; ?>
             <?php foreach($info_pelanggaran->result() as $row){?>
             <tr style="font-size: 11px;">
-                <td><?php echo $i++ ?></td>	
-                <td><?php echo $row->nis ?></td>
-                <td><?php echo $row->nama_siswa ?></td>	
-                <td><?php echo $row->total_skor ?></td>	
+                <td><?php return $i++ ?></td>	
+                <td><?php return $row->nis ?></td>
+                <td><?php return $row->nama_siswa ?></td>	
+                <td><?php return $row->total_skor ?></td>	
             </tr>
             <?php } ?>	
         </table>
