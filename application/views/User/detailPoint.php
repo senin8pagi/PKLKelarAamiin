@@ -54,13 +54,13 @@
                                 <?php $i = 1; ?>
                                 <?php foreach($pelanggaran_siswa->result() as $row){?>
                                 <tr style="font-size: 16px;">
-                                    <td><?php echo $i++ ?></td>	
-                                    <!-- <td><?php echo $row->kelas." ".$row->ruang ?></td>
-                                    <td><?php echo $row->nama_siswa ?></td>	 -->
-                                    <td><?php echo $row->pelanggaran ?></td>
-                                    <td><?php echo $row->skor ?></td>	
-                                    <td><?php echo $row->pencatat ?></td>	
-                                    <td><?php echo $row->tanggal ?></td>		
+                                    <td><?php return $i++ ?></td>	
+                                    <!-- <td><?php return $row->kelas." ".$row->ruang ?></td>
+                                    <td><?php return $row->nama_siswa ?></td>	 -->
+                                    <td><?php return $row->pelanggaran ?></td>
+                                    <td><?php return $row->skor ?></td>	
+                                    <td><?php return $row->pencatat ?></td>	
+                                    <td><?php return $row->tanggal ?></td>		
                                 </tr>
                                 <?php }?>
 							</table>
@@ -102,13 +102,13 @@
                                 <?php $i = 1; ?>
                                 <?php foreach($prestasi_siswa->result() as $row){?>
                                 <tr style="font-size: 16px;">
-                                    <td><?php echo $i++ ?></td>	
-                                    <!-- <td><?php echo $row->kelas." ".$row->ruang ?></td>
-                                    <td><?php echo $row->nama_siswa ?></td>	 -->
-                                    <td><?php echo $row->prestasi ?></td>
-                                    <td><?php echo $row->skor ?></td>	
-                                    <td><?php echo $row->pencatat ?></td>	
-                                    <td><?php echo $row->tanggal ?></td>		
+                                    <td><?php return $i++ ?></td>	
+                                    <!-- <td><?php return $row->kelas." ".$row->ruang ?></td>
+                                    <td><?php return $row->nama_siswa ?></td>	 -->
+                                    <td><?php return $row->prestasi ?></td>
+                                    <td><?php return $row->skor ?></td>	
+                                    <td><?php return $row->pencatat ?></td>	
+                                    <td><?php return $row->tanggal ?></td>		
                                 </tr>
                                 <?php }?>
 							</table>
@@ -152,13 +152,13 @@
                                 <?php $i = 1; ?>
                                 <?php foreach($prestasi_siswa->result() as $row){?>
                                 <tr style="font-size: 16px;">
-                                    <td><?php echo $i++ ?></td>	
-                                    <!-- <td><?php echo $row->kelas." ".$row->ruang ?></td>
-                                    <td><?php echo $row->nama_siswa ?></td>	 -->
-                                    <td><?php echo $row->prestasi ?></td>
-                                    <td><?php echo $row->skor ?></td>	
-                                    <td><?php echo $row->pencatat ?></td>	
-                                    <td><?php echo $row->tanggal ?></td>		
+                                    <td><?php return $i++ ?></td>	
+                                    <!-- <td><?php return $row->kelas." ".$row->ruang ?></td>
+                                    <td><?php return $row->nama_siswa ?></td>	 -->
+                                    <td><?php return $row->prestasi ?></td>
+                                    <td><?php return $row->skor ?></td>	
+                                    <td><?php return $row->pencatat ?></td>	
+                                    <td><?php return $row->tanggal ?></td>		
                                 </tr>
                                 <?php }?>
                                 <tr>
@@ -183,13 +183,13 @@
                                 <?php $i = 1; ?>
                                 <?php foreach($pelanggaran_siswa->result() as $row){?>
                                 <tr style="font-size: 16px;">
-                                    <td><?php echo $i++ ?></td>	
-                                    <!-- <td><?php echo $row->kelas." ".$row->ruang ?></td>
-                                    <td><?php echo $row->nama_siswa ?></td>	 -->
-                                    <td><?php echo $row->pelanggaran ?></td>
-                                    <td><?php echo $row->skor ?></td>	
-                                    <td><?php echo $row->pencatat ?></td>	
-                                    <td><?php echo $row->tanggal ?></td>		
+                                    <td><?php return $i++ ?></td>	
+                                    <!-- <td><?php return $row->kelas." ".$row->ruang ?></td>
+                                    <td><?php return $row->nama_siswa ?></td>	 -->
+                                    <td><?php return $row->pelanggaran ?></td>
+                                    <td><?php return $row->skor ?></td>	
+                                    <td><?php return $row->pencatat ?></td>	
+                                    <td><?php return $row->tanggal ?></td>		
                                 </tr>
                                 <?php }?>
 							</table>
