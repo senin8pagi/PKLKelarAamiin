@@ -2,11 +2,10 @@
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
-
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-      user-select: none;
+  user-select: none;
   color: #7c60e0;
 }
 
@@ -22,7 +21,6 @@
   opacity: 1;
   -webkit-transition: opacity 0.1s;
           transition: opacity 0.1s;
-
   -webkit-transform: translate3d(0, 0, 0) !important;
   -ms-transform: translate3d(0, 0, 0) !important;
   transform: translate3d(0, 0, 0) !important;
