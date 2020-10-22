@@ -120,14 +120,14 @@ display: none;
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item active">
-            <a href="<?= base_url("dashboard")?>" class="nav-link <?php if($title == "Dashboard") echo "active"?>">
+            <a href="<?= base_url("dashboard")?>" class="nav-link <?php if($title == "Dashboard") return "active"?>">
               <i class="nav-icon fa fa-home"></i>
               <p>Dashboard</p>
             </a>
           </li>
           <?php if($this->session->userdata("jabatan") == "admin"){?>
-          <li class="nav-item has-treeview <?php if($title == "Kelola User" || $title == "Kelola Siswa" || $title == "Kelola Kelas" || $title == "Kelola Semester") echo "menu-open"?>">
-            <a href="#" class="nav-link <?php if($title == "Kelola User" || $title == "Kelola Siswa" || $title == "Kelola Kelas") echo "active"?>">
+          <li class="nav-item has-treeview <?php if($title == "Kelola User" || $title == "Kelola Siswa" || $title == "Kelola Kelas" || $title == "Kelola Semester") return "menu-open"?>">
+            <a href="#" class="nav-link <?php if($title == "Kelola User" || $title == "Kelola Siswa" || $title == "Kelola Kelas") return "active"?>">
               <i class="nav-icon fas fa-users-cog"></i>
               <p>
                 Kelola
@@ -136,25 +136,25 @@ display: none;
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?= base_url("kelola/user")?>" class="nav-link <?php if($title == "Kelola User") echo "active"?> ml-2">
+                <a href="<?= base_url("kelola/user")?>" class="nav-link <?php if($title == "Kelola User") return "active"?> ml-2">
                   <i class="fa fa-user-edit nav-icon"></i>
                   <p>Kelola User</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= base_url("kelola/siswa")?>" class="nav-link <?php if($title == "Kelola Siswa") echo "active"?> ml-2">
+                <a href="<?= base_url("kelola/siswa")?>" class="nav-link <?php if($title == "Kelola Siswa") return "active"?> ml-2">
                   <i class="fa fa-user-edit nav-icon"></i>
                   <p>Kelola Siswa</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= base_url("kelola/kelas")?>" class="nav-link <?php if($title == "Kelola Kelas") echo "active"?> ml-2">
+                <a href="<?= base_url("kelola/kelas")?>" class="nav-link <?php if($title == "Kelola Kelas") return "active"?> ml-2">
                   <i class="fa fa-school nav-icon"></i>
                   <p>Kelola Kelas</p>
                 </a>
               </li>
               <li class="nav-item active">
-                <a href="<?= base_url("kelola/semester")?>" class="nav-link <?php if($title == "Kelola Semester") echo "active"?> ml-2">
+                <a href="<?= base_url("kelola/semester")?>" class="nav-link <?php if($title == "Kelola Semester") return "active"?> ml-2">
                   <i class="nav-icon fa fa-home"></i>
                   <p>Kelola Semester</p>
                 </a>
@@ -162,13 +162,13 @@ display: none;
             </ul>
           </li>
           <li class="nav-item active">
-            <a href="<?= base_url("kelola/penempatan_kelas")?>" class="nav-link <?php if($title == "Kelola Penempatan Kelas") echo "active"?>">
+            <a href="<?= base_url("kelola/penempatan_kelas")?>" class="nav-link <?php if($title == "Kelola Penempatan Kelas") return "active"?>">
               <i class="nav-icon fa fa-home"></i>
               <p>Penempatan Kelas</p>
             </a>
           </li>
-          <li class="nav-item has-treeview <?php if($title == "Kelola Daftar Prestasi" || $title == "Kelola Daftar Pelanggaran" || $title == "Kelola Jenis Prestasi" || $title == "Kelola Jenis Pelanggaran") echo "menu-open"?>">
-            <a href="#" class="nav-link <?php if($title == "Kelola Daftar Prestasi" || $title == "Kelola Daftar Pelanggaran") echo "active"?>">
+          <li class="nav-item has-treeview <?php if($title == "Kelola Daftar Prestasi" || $title == "Kelola Daftar Pelanggaran" || $title == "Kelola Jenis Prestasi" || $title == "Kelola Jenis Pelanggaran") return "menu-open"?>">
+            <a href="#" class="nav-link <?php if($title == "Kelola Daftar Prestasi" || $title == "Kelola Daftar Pelanggaran") return "active"?>">
               <i class="nav-icon fas fa-clipboard-list"></i>
               <p>
                 Daftar Skor
@@ -177,25 +177,25 @@ display: none;
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?=base_url("kelola/jenis_prestasi")?>" class="nav-link <?php if($title == "Kelola Jenis Prestasi") echo "active"?> ml-2">
+                <a href="<?=base_url("kelola/jenis_prestasi")?>" class="nav-link <?php if($title == "Kelola Jenis Prestasi") return "active"?> ml-2">
                   <i class="fa fa-balance-scale-right nav-icon"></i>
                   <p>Jenis Prestasi</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?=base_url("kelola/jenis_pelanggaran")?>" class="nav-link <?php if($title == "Kelola Jenis Pelanggaran") echo "active"?> ml-2">
+                <a href="<?=base_url("kelola/jenis_pelanggaran")?>" class="nav-link <?php if($title == "Kelola Jenis Pelanggaran") return "active"?> ml-2">
                   <i class="fa fa-balance-scale-left nav-icon"></i>
                   <p>Jenis Pelanggaran</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?=base_url("kelola/prestasi")?>" class="nav-link <?php if($title == "Kelola Daftar Prestasi") echo "active"?> ml-2">
+                <a href="<?=base_url("kelola/prestasi")?>" class="nav-link <?php if($title == "Kelola Daftar Prestasi") return "active"?> ml-2">
                   <i class="fa fa-balance-scale-right nav-icon"></i>
                   <p>Daftar Prestasi</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= base_url("kelola/pelanggaran")?>" class="nav-link <?php if($title == "Kelola Daftar Pelanggaran") echo "active"?> ml-2">
+                <a href="<?= base_url("kelola/pelanggaran")?>" class="nav-link <?php if($title == "Kelola Daftar Pelanggaran") return "active"?> ml-2">
                   <i class="fa fa-balance-scale-left nav-icon"></i>
                   <p>Daftar Pelanggaran</p>
                 </a>
@@ -203,8 +203,8 @@ display: none;
             </ul>
           </li>
         
-          <li class="nav-item has-treeview <?php if($title == "Pencatatan Prestasi" || $title == "Pencatatan Pelanggaran") echo "menu-open"?>">
-            <a href="#" class="nav-link <?php if($title == "Pencatatan Prestasi" || $title == "Pencatatan Pelanggaran") echo "active"?>">
+          <li class="nav-item has-treeview <?php if($title == "Pencatatan Prestasi" || $title == "Pencatatan Pelanggaran") return "menu-open"?>">
+            <a href="#" class="nav-link <?php if($title == "Pencatatan Prestasi" || $title == "Pencatatan Pelanggaran") return "active"?>">
               <i class="nav-icon fas fa-pen-alt"></i>
               <p>
                 Pencatatan Skor
@@ -213,13 +213,13 @@ display: none;
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?=base_url("catat/PencatatanPrestasi")?>" class="nav-link <?php if($title == "Pencatatan Prestasi") echo "active"?> ml-2">
+                <a href="<?=base_url("catat/PencatatanPrestasi")?>" class="nav-link <?php if($title == "Pencatatan Prestasi") return "active"?> ml-2">
                   <i class="fa fa-star nav-icon"></i>
                   <p>Pencatatan Prestasi</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?=base_url("catat/PencatatanPelanggaran")?>" class="nav-link <?php if($title == "Pencatatan Pelanggaran") echo "active"?> ml-2">
+                <a href="<?=base_url("catat/PencatatanPelanggaran")?>" class="nav-link <?php if($title == "Pencatatan Pelanggaran") return "active"?> ml-2">
                   <i class="fa fa-skull nav-icon"></i>
                   <p>Pencatatan Pelanggaran</p>
                 </a>
@@ -228,13 +228,13 @@ display: none;
           </li>
           <?php } ?>
           <li class="nav-item ">
-            <a href="<?= base_url("kelola/sanksi")?>" class="nav-link <?php if($title == "Kelola Sanksi") echo "active"?>">
+            <a href="<?= base_url("kelola/sanksi")?>" class="nav-link <?php if($title == "Kelola Sanksi") return "active"?>">
               <i class="nav-icon fas fa-list-ul"></i>
               <p>Daftar Penanganan</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a href="<?= base_url("Cetak/laporan")?>" class="nav-link <?php if($title == "Pencetakan Laporan") echo "active"?>">
+            <a href="<?= base_url("Cetak/laporan")?>" class="nav-link <?php if($title == "Pencetakan Laporan") return "active"?>">
               <i class="nav-icon fa fa-print"></i>
               <p>Cetak Laporan</p>
             </a>
