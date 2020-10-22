@@ -21,14 +21,14 @@
 			<div class="container-fluid col-sm-12">
 				<nav>
 					<div class="nav nav-tabs" id="nav-tab" role="tablist">
-					<a class="nav-item nav-link <?php if($tabPil=="pelanggaran" || $tabPil==NULL) echo "active"?>" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Pelanggaran</a>
-					<a class="nav-item nav-link <?php if($tabPil=="prestasi") echo "active"?>" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Prestasi</a>
-					<a class="nav-item nav-link <?php if($tabPil=="total") echo "active"?>" id="nav-profile-tab2" data-toggle="tab" href="#nav-profile2" role="tab" aria-controls="nav-profile2" aria-selected="false">Total Skor</a>
+					<a class="nav-item nav-link <?php if($tabPil=="pelanggaran" || $tabPil==NULL) return "active"?>" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Pelanggaran</a>
+					<a class="nav-item nav-link <?php if($tabPil=="prestasi") return "active"?>" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Prestasi</a>
+					<a class="nav-item nav-link <?php if($tabPil=="total") return "active"?>" id="nav-profile-tab2" data-toggle="tab" href="#nav-profile2" role="tab" aria-controls="nav-profile2" aria-selected="false">Total Skor</a>
 					</div>
 				</nav>
 				
 				<div class="tab-content" id="nav-tabContent">
-					<div class="tab-pane fade <?php if($tabPil=="pelanggaran" || $tabPil==NULL) echo "show active"?>" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+					<div class="tab-pane fade <?php if($tabPil=="pelanggaran" || $tabPil==NULL) return "show active"?>" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 					<!-- Isi Kelola User -->
 					
 						<!--Membuat form kelola -->
@@ -48,7 +48,7 @@
 														<option value="" selected disabled>Pilih Kelas</option>
 														<option value="<?= NULL?>">Semua Kelas</option>
 							<?php foreach($kelas->result() as $row){?>
-														<option value="<?= $row->id_kelas?>" <?php if(isset($siswa) && $siswa->id_kelas == $row->id_kelas) echo "selected"?>><?= $row->kelas." ".$row->ruang?></option>
+														<option value="<?= $row->id_kelas?>" <?php if(isset($siswa) && $siswa->id_kelas == $row->id_kelas) return "selected"?>><?= $row->kelas." ".$row->ruang?></option>
 							<?php } ?>
 													</select>
 												</div>
@@ -75,11 +75,11 @@
 												<?php $i = 1; ?>
 													<?php foreach($info_pelanggaran->result() as $row){?>	
 														<tr>
-															<td><?php echo $i++ ?></td>	
-															<td><?php echo $row->nis ?></td>
-															<td><?php echo $row->kelas." ".$row->ruang ?></td>
-															<td><?php echo $row->nama_siswa ?></td>	
-															<td><?php echo $row->total_skor ?></td>	
+															<td><?php return $i++ ?></td>	
+															<td><?php return $row->nis ?></td>
+															<td><?php return $row->kelas." ".$row->ruang ?></td>
+															<td><?php return $row->nama_siswa ?></td>	
+															<td><?php return $row->total_skor ?></td>	
 															<td>
 																<a class="btn btn-primary" href="<?= base_url("cetak/detailPelanggaran/$row->nis") ?>">Rekap Data<i class="fa fa-print ml-2"></i></a>
 															</td>
@@ -93,7 +93,7 @@
 							</div>
 						</div>
 					
-					<div class="tab-pane fade <?php if($tabPil=="prestasi") echo "show active"?>" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+					<div class="tab-pane fade <?php if($tabPil=="prestasi") return "show active"?>" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 					<!-- Isi Kelola User -->
 					
 					<!--Membuat form kelola -->
@@ -113,7 +113,7 @@
 														<option value="" selected disabled>Pilih Kelas</option>
 														<option value="<?= NULL?>">Semua Kelas</option>
 							<?php foreach($kelas->result() as $row){?>
-														<option value="<?= $row->id_kelas?>" <?php if(isset($siswa) && $siswa->id_kelas == $row->id_kelas) echo "selected"?>><?= $row->kelas." ".$row->ruang?></option>								
+														<option value="<?= $row->id_kelas?>" <?php if(isset($siswa) && $siswa->id_kelas == $row->id_kelas) return "selected"?>><?= $row->kelas." ".$row->ruang?></option>								
 							<?php } ?>
 													</select>
 												</div>
@@ -138,11 +138,11 @@
 											<?php $i = 1; ?>
 											<?php foreach($info_prestasi->result() as $row){?>	
 											<tr>
-												<td><?php echo $i++ ?></td>	
-												<td><?php echo $row->nis ?></td>
-												<td><?php echo $row->kelas." ".$row->ruang ?></td>
-												<td><?php echo $row->nama_siswa ?></td>	
-												<td><?php echo $row->total_skor ?></td>	
+												<td><?php return $i++ ?></td>	
+												<td><?php return $row->nis ?></td>
+												<td><?php return $row->kelas." ".$row->ruang ?></td>
+												<td><?php return $row->nama_siswa ?></td>	
+												<td><?php return $row->total_skor ?></td>	
 												<td>
 													<a class="btn btn-primary" href="<?= base_url("cetak/detailPrestasi/$row->nis") ?>">Rekap Data<i class="fa fa-print ml-2"></i></a>
 												</td>
@@ -156,7 +156,7 @@
 						</div>
 					</div>
 					
-					<div class="tab-pane fade <?php if($tabPil=="total") echo "show active"?>" id="nav-profile2" role="tabpanel" aria-labelledby="nav-profile-tab2">
+					<div class="tab-pane fade <?php if($tabPil=="total") return "show active"?>" id="nav-profile2" role="tabpanel" aria-labelledby="nav-profile-tab2">
 					<!-- Isi Kelola User -->
 					<!--Membuat form kelola -->
 					<!-- DataTables Example -->
@@ -175,7 +175,7 @@
 												<option value="" selected disabled>Pilih Kelas</option>
 												<option value="<?= NULL?>">Semua Kelas</option>
 					<?php foreach($kelas->result() as $row){?>
-												<option value="<?= $row->id_kelas?>" <?php if(isset($siswa) && $siswa->id_kelas == $row->id_kelas) echo "selected"?>><?= $row->kelas." ".$row->ruang?></option>								
+												<option value="<?= $row->id_kelas?>" <?php if(isset($siswa) && $siswa->id_kelas == $row->id_kelas) return "selected"?>><?= $row->kelas." ".$row->ruang?></option>								
 					<?php } ?>
 											</select>
 										</div>
@@ -200,11 +200,11 @@
 										<?php $i = 1; ?>
 										<?php foreach($info_total->result() as $row){?>	
 										<tr>
-											<td><?php echo $i++ ?></td>	
-											<td><?php echo $row->nis ?></td>
-											<td><?php echo $row->kelas." ".$row->ruang ?></td>
-											<td><?php echo $row->nama_siswa ?></td>	
-											<td><?php echo $row->total_skor ?></td>	
+											<td><?php return $i++ ?></td>	
+											<td><?php return $row->nis ?></td>
+											<td><?php return $row->kelas." ".$row->ruang ?></td>
+											<td><?php return $row->nama_siswa ?></td>	
+											<td><?php return $row->total_skor ?></td>	
 											<td>
 												<a class="btn btn-primary" href="<?= base_url("cetak/detailTotalSkor/$row->nis") ?>">Rekap Data<i class="fa fa-print ml-2"></i></a>
 											</td>
