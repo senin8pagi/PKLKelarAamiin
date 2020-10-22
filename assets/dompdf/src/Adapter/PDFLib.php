@@ -1312,7 +1312,7 @@ class PDFLib implements Canvas
         header(Helpers::buildContentDispositionHeader($attachment, $filename));
 
         if (self::$IN_MEMORY) {
-            echo $data;
+            return $data;
         } else {
             // Chunked readfile()
             $chunk = (1 << 21); // 2 MB
@@ -1322,7 +1322,7 @@ class PDFLib implements Canvas
             }
 
             while (!feof($fh)) {
-                echo fread($fh, $chunk);
+                return fread($fh, $chunk);
             }
             fclose($fh);
 
