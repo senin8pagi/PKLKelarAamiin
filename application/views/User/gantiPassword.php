@@ -35,7 +35,7 @@
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label>NIP :</label>
-                                        <input type="text" id="nip" name="nip" class="form-control" placeholder="NIP" value="<?php if(isset($changePasswordUser)) echo $changePasswordUser->nip?>" <?php if(isset($changePasswordUser)) echo "disabled" ?> required autofocus>
+                                        <input type="text" id="nip" name="nip" class="form-control" placeholder="NIP" value="<?php if(isset($changePasswordUser)) return $changePasswordUser->nip?>" <?php if(isset($changePasswordUser)) return "disabled" ?> required autofocus>
                                     </div>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label>Nama Guru :</label>
-                                        <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama guru" value="<?php if(isset($changePasswordUser)) echo $changePasswordUser->nama?>" readonly>
+                                        <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama guru" value="<?php if(isset($changePasswordUser)) return $changePasswordUser->nama?>" readonly>
                                     </div>
                                 </div>                                
                             </div>
@@ -95,9 +95,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="hidden" id="jenis_kelamin" name="jenis_kelamin" class="form-control" value="<?php if(isset($changePasswordUser)) echo $changePasswordUser->jenis_kelamin?>">
-                            <input type="hidden" id="jabatan" name="jabatan" class="form-control" value="<?php if(isset($changePasswordUser)) echo $changePasswordUser->jabatan?>">
-                            <input type="hidden" id="alamat" name="alamat" class="form-control" value="<?php if(isset($changePasswordUser)) echo $changePasswordUser->alamat?>">
+                            <input type="hidden" id="jenis_kelamin" name="jenis_kelamin" class="form-control" value="<?php if(isset($changePasswordUser)) return $changePasswordUser->jenis_kelamin?>">
+                            <input type="hidden" id="jabatan" name="jabatan" class="form-control" value="<?php if(isset($changePasswordUser)) return $changePasswordUser->jabatan?>">
+                            <input type="hidden" id="alamat" name="alamat" class="form-control" value="<?php if(isset($changePasswordUser)) return $changePasswordUser->alamat?>">
                         </form>
                         <div class="ml-3">
                             <a href="<?=base_url('kelola/user')?>" class="btn btn-danger">Batal</a>
