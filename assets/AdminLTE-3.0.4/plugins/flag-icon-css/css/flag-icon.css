@@ -15,7 +15,9 @@
 .flag-icon:before { content: "\00a0"; }
 .flag-icon.flag-icon-squared { width: 1em; }
 .flag-icon-ad { background-image: url(../flags/4x3/ad.svg); }
-.flag-icon-ad.flag-icon-squared { background-image: url(../flags/1x1/ad.svg); }
+.flag-icon-ad.flag-icon-squared {
+  background-image: url(../flags/1x1/ad.svg); 
+}
 .flag-icon-ae { background-image: url(../flags/4x3/ae.svg); }
 .flag-icon-ae.flag-icon-squared { background-image: url(../flags/1x1/ae.svg); }
 .flag-icon-af { background-image: url(../flags/4x3/af.svg); }
@@ -34,7 +36,7 @@
 .flag-icon-aq.flag-icon-squared { background-image: url(../flags/1x1/aq.svg); }
 .flag-icon-ar { background-image: url(../flags/4x3/ar.svg); }
 .flag-icon-ar.flag-icon-squared { background-image: url(../flags/1x1/ar.svg); }
-.flag-icon-as { background-image: url(../flags/4x3/as.svg);}
+.flag-icon-as { background-image: url(../flags/4x3/as.svg); }
 .flag-icon-as.flag-icon-squared { background-image: url(../flags/1x1/as.svg); }
 .flag-icon-at { background-image: url(../flags/4x3/at.svg); }
 .flag-icon-at.flag-icon-squared { background-image: url(../flags/1x1/at.svg); }
@@ -50,7 +52,7 @@
 .flag-icon-ba.flag-icon-squared { background-image: url(../flags/1x1/ba.svg); }
 .flag-icon-bb { background-image: url(../flags/4x3/bb.svg); }
 .flag-icon-bb.flag-icon-squared { background-image: url(../flags/1x1/bb.svg); }
-.flag-icon-bd { background-image: url(../flags/4x3/bd.svg);}
+.flag-icon-bd { background-image: url(../flags/4x3/bd.svg); }
 .flag-icon-bd.flag-icon-squared { background-image: url(../flags/1x1/bd.svg); }
 .flag-icon-be { background-image: url(../flags/4x3/be.svg); }
 .flag-icon-be.flag-icon-squared { background-image: url(../flags/1x1/be.svg); }
@@ -77,7 +79,7 @@
 .flag-icon-br { background-image: url(../flags/4x3/br.svg); }
 .flag-icon-br.flag-icon-squared { background-image: url(../flags/1x1/br.svg); }
 .flag-icon-bs { background-image: url(../flags/4x3/bs.svg); }
-.flag-icon-bs.flag-icon-squared { background-image: url(../flags/1x1/bs.svg);}
+.flag-icon-bs.flag-icon-squared { background-image: url(../flags/1x1/bs.svg); }
 .flag-icon-bt { background-image: url(../flags/4x3/bt.svg); }
 .flag-icon-bt.flag-icon-squared { background-image: url(../flags/1x1/bt.svg); }
 .flag-icon-bv { background-image: url(../flags/4x3/bv.svg); }
@@ -94,7 +96,7 @@
 .flag-icon-cc.flag-icon-squared { background-image: url(../flags/1x1/cc.svg); }
 .flag-icon-cd { background-image: url(../flags/4x3/cd.svg); }
 .flag-icon-cd.flag-icon-squared { background-image: url(../flags/1x1/cd.svg); }
-.flag-icon-cf { background-image: url(../flags/4x3/cf.svg);}
+.flag-icon-cf { background-image: url(../flags/4x3/cf.svg); }
 .flag-icon-cf.flag-icon-squared { background-image: url(../flags/1x1/cf.svg); }
 .flag-icon-cg { background-image: url(../flags/4x3/cg.svg); }
 .flag-icon-cg.flag-icon-squared { background-image: url(../flags/1x1/cg.svg); }
