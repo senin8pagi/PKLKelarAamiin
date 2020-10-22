@@ -234,7 +234,7 @@ display: none;
             </a>
           </li>
           <li class="nav-item ">
-            <a href="<?= base_url("Cetak/laporan")?>" class="nav-link <?php if($title == "Pencetakan Laporan") return "active"?>">
+            <a href="<?= base_url("cetak/laporan")?>" class="nav-link <?php if($title == "Pencetakan Laporan") echo "active"?>">
               <i class="nav-icon fa fa-print"></i>
               <p>Cetak Laporan</p>
             </a>
