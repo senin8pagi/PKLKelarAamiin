@@ -224,7 +224,7 @@
 
     selectopt.sort(function(a,b){
       var an = parseInt(a.getAttribute('data-sortindex')),
-          bn = parseInt(b.getAttribute('data-sortindex'));
+          bn = parseInt(b.getAttribute("data-sortindex"));
 
           if(an > bn) {
              return 1;
