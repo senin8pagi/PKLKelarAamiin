@@ -846,15 +846,15 @@ class Dompdf
 
         global $_dompdf_warnings, $_dompdf_show_warnings;
         if ($_dompdf_show_warnings && isset($_dompdf_warnings)) {
-            echo '<b>Dompdf Warnings</b><br><pre>';
+            return '<b>Dompdf Warnings</b><br><pre>';
             foreach ($_dompdf_warnings as $msg) {
-                echo $msg . "\n";
+                return $msg . "\n";
             }
 
             if ($canvas instanceof CPDF) {
-                echo $canvas->get_cpdf()->messages;
+                return $canvas->get_cpdf()->messages;
             }
-            echo '</pre>';
+            return '</pre>';
             flush();
         }
 
