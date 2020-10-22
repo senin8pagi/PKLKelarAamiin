@@ -66,7 +66,7 @@ $bootstrap-input-focus-border: 1px solid lighten($bootstrap-primary, 25%) !defau
 $bootstrap-input-focus-box-shadow: 0 0 0 $bootstrap-input-focus-width rgba($bootstrap-primary, 0.25) !default;
 
 // Button
-$bootstrap-btn-transition: color 0.15s ease-in-out, background-color .15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !default;
+$bootstrap-btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !default;
 $bootstrap-btn-secondary-focus-box-shadow: 0 0 0 $bootstrap-input-focus-width rgba($bootstrap-secondary, 0.25) !default;
 
 // Custom Shared Variables
@@ -110,14 +110,14 @@ $bootstrap-custom-range-track-height: 0.5rem !default;
 $bootstrap-custom-range-track-cursor: pointer !default;
 $bootstrap-custom-range-track-bg: $bootstrap-gray-300 !default;
 $bootstrap-custom-range-track-border-radius: 1rem !default;
-$bootstrap-custom-range-track-box-shadow: inset 0 0.25rem 0.25rem rgba($swal2-black, .1) !default;
+$bootstrap-custom-range-track-box-shadow: inset 0 0.25rem 0.25rem rgba($swal2-black, 0.1) !default;
 
 $bootstrap-custom-range-thumb-width: 1rem !default;
 $bootstrap-custom-range-thumb-height: $bootstrap-custom-range-thumb-width !default;
 $bootstrap-custom-range-thumb-bg: $bootstrap-primary !default;
 $bootstrap-custom-range-thumb-border: 0 !default;
 $bootstrap-custom-range-thumb-border-radius: 1rem !default;
-$bootstrap-custom-range-thumb-box-shadow: 0 .1rem 0.25rem rgba($swal2-black, .1) !default;
+$bootstrap-custom-range-thumb-box-shadow: 0 .1rem 0.25rem rgba($swal2-black, 0.1) !default;
 $bootstrap-custom-range-thumb-focus-box-shadow: 0 0 0 1px $swal2-white, $bootstrap-input-focus-box-shadow !default;
 $bootstrap-custom-range-thumb-focus-box-shadow-width: $bootstrap-input-focus-width !default; // For focus box shadow issue in IE/Edge
 $bootstrap-custom-range-thumb-active-bg: lighten($bootstrap-primary, 35%) !default;
@@ -128,11 +128,11 @@ $bootstrap-toast-max-width:                   350px !default;
 $bootstrap-toast-padding-x:                   0.75rem !default;
 $bootstrap-toast-padding-y:                   0.25rem !default;
 $bootstrap-toast-font-size:                   0.875rem !default;
-$bootstrap-toast-background-color:            rgba($swal2-white, .85) !default;
+$bootstrap-toast-background-color:            rgba($swal2-white, 0.85) !default;
 $bootstrap-toast-border-width:                1px !default;
-$bootstrap-toast-border-color:                rgba(0, 0, 0, .1) !default;
+$bootstrap-toast-border-color:                rgba(0, 0, 0, 0.1) !default;
 $bootstrap-toast-border-radius:               0.25rem !default;
-$bootstrap-toast-box-shadow:                  0 0.25rem 0.75rem rgba($swal2-black, .1) !default;
+$bootstrap-toast-box-shadow:                  0 0.25rem 0.75rem rgba($swal2-black, 0.1) !default;
 
 // override SASS variables here
 
