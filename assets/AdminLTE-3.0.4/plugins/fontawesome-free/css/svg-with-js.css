@@ -3,7 +3,8 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 svg:not(:root).svg-inline--fa {
-  overflow: visible; }
+  overflow: visible;
+}
 
 .svg-inline--fa {
   display: inline-block;
