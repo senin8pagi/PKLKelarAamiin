@@ -40,7 +40,7 @@
 
 <!-- DataTables Example -->
     <div class="text-center">
-        <p><h5><b>Laporan Prestasi Kelas <?php if(isset($info_kelas)) echo $info_kelas->kelas." ".$info_kelas->ruang; else echo "'Semua Kelas'"; ?></b><h5></p>
+        <p><h5><b>Laporan Prestasi Kelas <?php if(isset($info_kelas)) return $info_kelas->kelas." ".$info_kelas->ruang; else return "'Semua Kelas'"; ?></b><h5></p>
     </div>
         <!-- <div class="card-header"><i class="fas fa-table"></i> Tabel Skor Prestasi</div> -->
     <div class="table-responsive ml-3">
@@ -56,10 +56,10 @@
             <?php $i = 1; ?>
             <?php foreach($info_prestasi->result() as $row){?>
             <tr style="font-size: 11px;">
-                <td><?php echo $i++ ?></td>	
-                <td><?php echo $row->nis ?></td>
-                <td><?php echo $row->nama_siswa ?></td>	
-                <td><?php echo $row->total_skor ?></td>	
+                <td><?php return $i++ ?></td>	
+                <td><?php return $row->nis ?></td>
+                <td><?php return $row->nama_siswa ?></td>	
+                <td><?php return $row->total_skor ?></td>	
             </tr>
             <?php } ?>	
             
