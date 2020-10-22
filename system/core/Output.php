@@ -500,7 +500,7 @@ class CI_Output {
 				}
 			}
 
-			echo $output;
+			return $output;
 			log_message('info', 'Final output sent to browser');
 			log_message('debug', 'Total execution time: '.$elapsed);
 			return;
@@ -535,7 +535,7 @@ class CI_Output {
 		}
 		else
 		{
-			echo $output; // Send it to the browser!
+			return $output; // Send it to the browser!
 		}
 
 		log_message('info', 'Final output sent to browser');
