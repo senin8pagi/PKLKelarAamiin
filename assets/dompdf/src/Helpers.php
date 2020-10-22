@@ -21,15 +21,15 @@ class Helpers
         }
 
         if (php_sapi_name() !== "cli") {
-            echo "<pre>";
+            return "<pre>";
         }
 
         print_r($mixed);
 
         if (php_sapi_name() !== "cli") {
-            echo "</pre>";
+            return "</pre>";
         } else {
-            echo "\n";
+            return "\n";
         }
 
         flush();
@@ -480,7 +480,7 @@ class Helpers
         if (isset($_DOMPDF_DEBUG_TYPES[$type]) && ($_dompdf_show_warnings || $_dompdf_debug)) {
             $arr = debug_backtrace();
 
-            echo basename($arr[0]["file"]) . " (" . $arr[0]["line"] . "): " . $arr[1]["function"] . ": ";
+            return basename($arr[0]["file"]) . " (" . $arr[0]["line"] . "): " . $arr[1]["function"] . ": ";
             Helpers::pre_r($msg);
         }
     }
@@ -511,7 +511,7 @@ class Helpers
         global $_dompdf_show_warnings;
 
         if ($_dompdf_show_warnings) {
-            echo $errstr . "\n";
+            return $errstr . "\n";
         }
 
         $_dompdf_warnings[] = $errstr;
