@@ -27,7 +27,7 @@ html.os-html > .os-host {
   margin: 0 !important;
   position: absolute !important; /* could be position: fixed; but it causes issues on iOS (-webkit-overflow-scrolling: touch) * /
 }
-html.os-html > .os-host > .os-padding { position: absolute; /* could be position: fixed; but it causes issues on iOS (-webkit-overflow-scrolling: touch) */}
+html.os-html > .os-host > .os-padding { position: absolute; /* could be position: fixed; but it causes issues on iOS (-webkit-overflow-scrolling: touch) */ }
 body.os-dragging,
 body.os-dragging * {
   cursor: default;
