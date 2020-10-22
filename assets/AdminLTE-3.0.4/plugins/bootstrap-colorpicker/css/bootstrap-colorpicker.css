@@ -20,7 +20,7 @@
   width: 148px;
   border-radius: 4px;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box; 
+  box-sizing: content-box; 
 }
 
 .colorpicker.colorpicker-disabled,
@@ -49,18 +49,18 @@
   border-radius: 0;
   background: none;
   -webkit-box-shadow: none;
-          box-shadow: none; 
+  box-shadow: none; 
 }
 .colorpicker:before,
 .colorpicker:after {
   content: "";
   display: table;
   clear: both;
-  line-height: 0; 
+  line-height: 0;
 }
 .colorpicker-clear {
   clear: both;
-  display: block; 
+  display: block;
 }
 .colorpicker:before {
   content: '';
@@ -83,11 +83,11 @@
   position: absolute;
   top: -6px;
   left: auto;
-  right: 7px; 
+  right: 7px;
 }
 .colorpicker.colorpicker-with-alpha { width: 170px; }
 
-.colorpicker.colorpicker-with-alpha .colorpicker-alpha {display: block; }
+.colorpicker.colorpicker-with-alpha .colorpicker-alpha { display: block; }
 
 .colorpicker-saturation {
   position: relative;
@@ -117,7 +117,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin: -3px 0 0 -3px; 
+    margin: -3px 0 0 -3px;
 }
 .colorpicker-hue,
 .colorpicker-alpha {
@@ -127,14 +127,14 @@
   float: left;
   cursor: row-resize;
   margin-left: 6px;
-  margin-bottom: 6px; 
+  margin-bottom: 6px;
 }
 .colorpicker-alpha-color {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; 
+  height: 100%;
 }
 .colorpicker-hue,
 .colorpicker-alpha-color {
