@@ -157,10 +157,10 @@
 							<?php $i = 1; ?>
 							<?php foreach($skorTertinggi as $row){?>
 							<tr>
-								<td><?php echo $i++ ?></td>	
-								<td><?php echo $row->nis ?></td>
-								<td><?php echo $row->nama_siswa ?></td>	
-								<td><?php echo $row->total_skor ?></td>	
+								<td><?php return $i++ ?></td>	
+								<td><?php return $row->nis ?></td>
+								<td><?php return $row->nama_siswa ?></td>	
+								<td><?php return $row->total_skor ?></td>	
 							</tr>
 							<?php } ?>	
 							
@@ -190,10 +190,10 @@
 							<?php $i = 1; ?>
 							<?php foreach($skorTerendah as $row){?>
 							<tr>
-								<td><?php echo $i++ ?></td>	
-								<td><?php echo $row->nis ?></td>
-								<td><?php echo $row->nama_siswa ?></td>	
-								<td><?php echo $row->total_skor ?></td>	
+								<td><?php return $i++ ?></td>	
+								<td><?php return $row->nis ?></td>
+								<td><?php return $row->nama_siswa ?></td>	
+								<td><?php return $row->total_skor ?></td>	
 							</tr>
 							<?php } ?>	
 							
@@ -245,10 +245,10 @@ HARUSNYA DIKASIH SAYANG~ UwU,.. Hehe
 							<?php $i = 1; ?>
 							<?php foreach($skorTerendah as $row){?>
 							<tr>
-								<td><?php echo $i++ ?></td>	
-								<td><?php echo $row->nis ?></td>
-								<td><?php echo $row->nama_siswa ?></td>	
-								<td><?php echo $row->total_skor ?></td>	
+								<td><?php return $i++ ?></td>	
+								<td><?php return $row->nis ?></td>
+								<td><?php return $row->nama_siswa ?></td>	
+								<td><?php return $row->total_skor ?></td>	
 							</tr>
 							<?php } ?>	
 							
