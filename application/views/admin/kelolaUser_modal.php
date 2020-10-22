@@ -107,13 +107,13 @@
                                     <div class="col-6">
                                         <div class="form-group">
                                             <label>NIP :</label>
-                                            <input type="text" id="nip" name="nip" class="form-control" placeholder="NIP" value="<?php if(isset($result)) echo $result->nip?>" <?php if(isset($result)) echo "disabled" ?> required autofocus>
+                                            <input type="text" id="nip" name="nip" class="form-control" placeholder="NIP" value="<?php if(isset($result)) return $result->nip?>" <?php if(isset($result)) return "disabled" ?> required autofocus>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="form-group">
                                             <label>Nama Guru :</label>
-                                            <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama guru" value="<?php if(isset($result)) echo $result->nama?>" required autofocus>
+                                            <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama guru" value="<?php if(isset($result)) return $result->nama?>" required autofocus>
                                         </div>
                                     </div>                                
                                 </div>
@@ -121,7 +121,7 @@
                                     <div class="col-6">
                                         <div class="form-group">
                                             <label>Alamat :</label>
-                                            <input type="text" id="alamat" name="alamat" class="form-control" placeholder="Alamat" value="<?php if(isset($result)) echo $result->alamat?>" required autofocus>
+                                            <input type="text" id="alamat" name="alamat" class="form-control" placeholder="Alamat" value="<?php if(isset($result)) return $result->alamat?>" required autofocus>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -129,9 +129,9 @@
                                             <label>Bagian :</label>
                                             <select id="jabatan" name="jabatan" class="form-control" required>
                                                 <option value="" selected disabled> Pilih Bagian: </option>
-                                                <option value="admin" <?php if(isset($result) && $result->jabatan == "admin") echo "selected"?>>Admin</option>
-                                                <option value="kesiswaan" <?php if(isset($result) && $result->jabatan == "kesiswaan") echo "selected"?>>Kesiswaan</option>
-                                                <option value="guru bk" <?php if(isset($result) && $result->jabatan == "guru bk") echo "selected"?>>Guru BK</option>
+                                                <option value="admin" <?php if(isset($result) && $result->jabatan == "admin") return "selected"?>>Admin</option>
+                                                <option value="kesiswaan" <?php if(isset($result) && $result->jabatan == "kesiswaan") return "selected"?>>Kesiswaan</option>
+                                                <option value="guru bk" <?php if(isset($result) && $result->jabatan == "guru bk") return "selected"?>>Guru BK</option>
                                             </select>
                                         </div>
                                     </div>
@@ -141,8 +141,8 @@
                                         <div class="form-group">
                                             <label>Jenis Kelamin :</label>
                                             <div class="mt-2">
-                                                <input type="radio" id="jenis_kelamin" name="jenis_kelamin" value="Laki-laki" <?php if(isset($result) && $result->jenis_kelamin == "Laki-laki") echo "checked"?> required> Laki-Laki
-                                                <input type="radio" id="jenis_kelamin" name="jenis_kelamin" value="Perempuan" <?php if(isset($result) && $result->jenis_kelamin == "Perempuan") echo "checked"?> required> Perempuan
+                                                <input type="radio" id="jenis_kelamin" name="jenis_kelamin" value="Laki-laki" <?php if(isset($result) && $result->jenis_kelamin == "Laki-laki") return "checked"?> required> Laki-Laki
+                                                <input type="radio" id="jenis_kelamin" name="jenis_kelamin" value="Perempuan" <?php if(isset($result) && $result->jenis_kelamin == "Perempuan") return "checked"?> required> Perempuan
                                             </div>
                                         </div>
                                     </div>
@@ -195,13 +195,13 @@
                                     <div class="col-6">
                                         <div class="form-group">
                                             <label>NIP :</label>
-                                            <input type="text" id="nip" name="nip" class="form-control" placeholder="NIP" value="<?php if(isset($changePassword)) echo $changePassword->nip?>" <?php if(isset($changePassword)) echo "disabled" ?> required autofocus>
+                                            <input type="text" id="nip" name="nip" class="form-control" placeholder="NIP" value="<?php if(isset($changePassword)) return $changePassword->nip?>" <?php if(isset($changePassword)) return "disabled" ?> required autofocus>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="form-group">
                                             <label>Nama Guru :</label>
-                                            <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama guru" value="<?php if(isset($changePassword)) echo $changePassword->nama?>" readonly>
+                                            <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama guru" value="<?php if(isset($changePassword)) return $changePassword->nama?>" readonly>
                                         </div>
                                     </div>                                
                                 </div>                              
@@ -235,9 +235,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <input type="hidden" id="jenis_kelamin" name="jenis_kelamin" class="form-control" value="<?php if(isset($changePassword)) echo $changePassword->jenis_kelamin?>">
-                                <input type="hidden" id="jabatan" name="jabatan" class="form-control" value="<?php if(isset($changePassword)) echo $changePassword->jabatan?>">
-                                <input type="hidden" id="alamat" name="alamat" class="form-control" value="<?php if(isset($changePassword)) echo $changePassword->alamat?>">
+                                <input type="hidden" id="jenis_kelamin" name="jenis_kelamin" class="form-control" value="<?php if(isset($changePassword)) return $changePassword->jenis_kelamin?>">
+                                <input type="hidden" id="jabatan" name="jabatan" class="form-control" value="<?php if(isset($changePassword)) return $changePassword->jabatan?>">
+                                <input type="hidden" id="alamat" name="alamat" class="form-control" value="<?php if(isset($changePassword)) return $changePassword->alamat?>">
                             </form>
                         </div>
                     </div>
