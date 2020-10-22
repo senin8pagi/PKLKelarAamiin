@@ -194,12 +194,12 @@
                                 <?php }?>
 							</table>
                             <div>
-                                <b>Jumlah Total Kredit Poin Siswa :</b> <?php if($detailSkor_siswa->total_skor > 0) echo $detailSkor_siswa->total_skor; else echo 0 ?><br>
+                                <b>Jumlah Total Kredit Poin Siswa :</b> <?php if($detailSkor_siswa->total_skor > 0) return $detailSkor_siswa->total_skor; else return 0 ?><br>
                                 <b>Penanganan Pelanggaran:</b> 
                                 <?php foreach($sanksi->result() as $row){
-                                    if($row->batas_bawah_poin <= $detailSkor_siswa->total_skor && $row->batas_atas_poin >= $detailSkor_siswa->total_skor) echo $row->sanksi;
+                                    if($row->batas_bawah_poin <= $detailSkor_siswa->total_skor && $row->batas_atas_poin >= $detailSkor_siswa->total_skor) return $row->sanksi;
                                 } 
-                                if($detailSkor_siswa->total_skor <= 0) echo "Tidak Ada" ?>
+                                if($detailSkor_siswa->total_skor <= 0) return "Tidak Ada" ?>
                                 
                             </div>
 						</div>
