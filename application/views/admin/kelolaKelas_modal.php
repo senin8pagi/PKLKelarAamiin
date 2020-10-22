@@ -85,11 +85,11 @@
                                             <label>Kelas :</label>
                                             <select id="kelas" name="kelas" class="form-control" required>
                                                 <option value="" selected disabled> Pilih Kelas: </option>
-                                                <option value="X" <?php if(isset($kelas) && $kelas->kelas == "X") echo "selected"?>>X</option>
-                                                <option value="XI" <?php if(isset($kelas) && $kelas->kelas == "XI") echo "selected"?>>XI</option>
-                                                <option value="XII" <?php if(isset($kelas) && $kelas->kelas == "XII") echo "selected"?>>XII</option>
+                                                <option value="X" <?php if(isset($kelas) && $kelas->kelas == "X") return "selected"?>>X</option>
+                                                <option value="XI" <?php if(isset($kelas) && $kelas->kelas == "XI") return "selected"?>>XI</option>
+                                                <option value="XII" <?php if(isset($kelas) && $kelas->kelas == "XII") return "selected"?>>XII</option>
                                             </select>
-                                            <!-- <input type="text" id="kelas" name="kelas" class="form-control" placeholder="Prestasi baru" value="<?php if(isset($kelas)) echo $kelas->kelas?>" required autofocus> -->
+                                            <!-- <input type="text" id="kelas" name="kelas" class="form-control" placeholder="Prestasi baru" value="<?php if(isset($kelas)) return $kelas->kelas?>" required autofocus> -->
                                         </div>
                                     </div>
                                 </div>
@@ -99,16 +99,16 @@
                                             <label>Ruang :</label>
                                             <select id="ruang" name="ruang" class="form-control" required>
                                                 <option value="" selected disabled> Pilih Ruangan: </option>
-                                                <option value="A" <?php if(isset($kelas) && $kelas->ruang == "A") echo "selected"?>>A</option>
-                                                <option value="B" <?php if(isset($kelas) && $kelas->ruang == "B") echo "selected"?>>B</option>
-                                                <option value="C" <?php if(isset($kelas) && $kelas->ruang == "C") echo "selected"?>>C</option>
-                                                <option value="D" <?php if(isset($kelas) && $kelas->ruang == "D") echo "selected"?>>D</option>
-                                                <option value="IPA 1" <?php if(isset($kelas) && $kelas->ruang == "IPA 1") echo "selected"?>>IPA 1</option>
-                                                <option value="IPA 2" <?php if(isset($kelas) && $kelas->ruang == "IPA 2") echo "selected"?>>IPA 2</option>
-                                                <option value="IPS 1" <?php if(isset($kelas) && $kelas->ruang == "IPS 1") echo "selected"?>>IPS 1</option>
-                                                <option value="IPS 2" <?php if(isset($kelas) && $kelas->ruang == "IPS 2") echo "selected"?>>IPS 2</option>
+                                                <option value="A" <?php if(isset($kelas) && $kelas->ruang == "A") return "selected"?>>A</option>
+                                                <option value="B" <?php if(isset($kelas) && $kelas->ruang == "B") return "selected"?>>B</option>
+                                                <option value="C" <?php if(isset($kelas) && $kelas->ruang == "C") return "selected"?>>C</option>
+                                                <option value="D" <?php if(isset($kelas) && $kelas->ruang == "D") return "selected"?>>D</option>
+                                                <option value="IPA 1" <?php if(isset($kelas) && $kelas->ruang == "IPA 1") return "selected"?>>IPA 1</option>
+                                                <option value="IPA 2" <?php if(isset($kelas) && $kelas->ruang == "IPA 2") return "selected"?>>IPA 2</option>
+                                                <option value="IPS 1" <?php if(isset($kelas) && $kelas->ruang == "IPS 1") return "selected"?>>IPS 1</option>
+                                                <option value="IPS 2" <?php if(isset($kelas) && $kelas->ruang == "IPS 2") return "selected"?>>IPS 2</option>
                                             </select>
-                                            <!-- <input type="text" id="ruang" name="ruang" class="form-control" placeholder="Skor prestasi" value="<?php if(isset($kelas)) echo $kelas->ruang?>" required autofocus> -->
+                                            <!-- <input type="text" id="ruang" name="ruang" class="form-control" placeholder="Skor prestasi" value="<?php if(isset($kelas)) return $kelas->ruang?>" required autofocus> -->
                                         </div>
                                     </div>
                                 </div>
