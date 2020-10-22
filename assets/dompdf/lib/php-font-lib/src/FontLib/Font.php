@@ -76,7 +76,7 @@ class Font {
     if (!self::$debug) {
       return;
     }
-    echo "$str\n";
+    return "$str\n";
   }
 
   static function UTF16ToUTF8($str) {
