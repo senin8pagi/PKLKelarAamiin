@@ -48,7 +48,7 @@ define(["./raphael.core"], function(R) {
     addGradientFill = function (element, gradient) {
         var type = "linear",
             id = element.id + gradient,
-            fx = .5, fy = .5,
+            fx = 0.5, fy = 0.5,
             o = element.node,
             SVG = element.paper,
             s = o.style,
@@ -59,10 +59,10 @@ define(["./raphael.core"], function(R) {
                 if (_fx && _fy) {
                     fx = toFloat(_fx);
                     fy = toFloat(_fy);
-                    var dir = ((fy > .5) * 2 - 1);
-                    pow(fx - .5, 2) + pow(fy - .5, 2) > .25 &&
-                        (fy = math.sqrt(.25 - pow(fx - .5, 2)) * dir + .5) &&
-                        fy != .5 &&
+                    var dir = ((fy > 0.5) * 2 - 1);
+                    pow(fx - 0.5, 2) + pow(fy - 0.5, 2) > 0.25 &&
+                        (fy = math.sqrt(0.25 - pow(fx - 0.5, 2)) * dir + 0.5) &&
+                        fy != 0.5 &&
                         (fy = fy.toFixed(5) - 1e-5 * dir);
                 }
                 return E;
@@ -377,7 +377,7 @@ define(["./raphael.core"], function(R) {
                         break;
                     case "clip-rect":
                         var rect = Str(value).split(separator);
-                        if (rect.length == 4) {
+                        if (rect.length === 4) {
                             o.clip && o.clip.parentNode.parentNode.removeChild(o.clip.parentNode);
                             var el = $("clipPath"),
                                 rc = $("rect");
@@ -471,7 +471,7 @@ define(["./raphael.core"], function(R) {
                         }
                         break;
                     case "stroke-width":
-                        if (o._.sx != 1 || o._.sy != 1) {
+                        if (o._.sx != 1 || o._.sy !== 1) {
                             value /= mmax(abs(o._.sx), abs(o._.sy)) || 1;
                         }
                         node.setAttribute(att, value);
@@ -870,7 +870,7 @@ define(["./raphael.core"], function(R) {
         this.pattern && updatePosition(this);
         this.node && $(this.node, {transform: this.matrix});
 
-        if (_.sx != 1 || _.sy != 1) {
+        if (_.sx != 1 || _.sy !== 1) {
             var sw = this.attrs[has]("stroke-width") ? this.attrs["stroke-width"] : 1;
             this.attr({"stroke-width": sw});
         }
@@ -1294,7 +1294,7 @@ define(["./raphael.core"], function(R) {
             xmlns: "http://www.w3.org/2000/svg",
             "xmlns:xlink": "http://www.w3.org/1999/xlink"
         });
-        if (container == 1) {
+        if (container === 1) {
             cnvs.style.cssText = css + "position:absolute;left:" + x + "px;top:" + y + "px";
             R._g.doc.body.appendChild(cnvs);
             isFloating = 1;
