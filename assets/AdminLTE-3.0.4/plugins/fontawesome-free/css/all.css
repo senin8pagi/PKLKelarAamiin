@@ -82,7 +82,7 @@
   padding-left: 0;
 }
 .fa-ul > li {
-  position: relative; 
+  position: relative;
 }
 
 .fa-li {
@@ -197,7 +197,7 @@
 :root .fa-flip-vertical,
 :root .fa-flip-both {
   -webkit-filter: none;
-   filter: none;
+  filter: none;
 }
 
 .fa-stack {
