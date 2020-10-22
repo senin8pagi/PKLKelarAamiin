@@ -66,7 +66,7 @@
                                     <div class="col-12">
                                         <div class="form-group">
                                             <label>Masukkan Tanggal Mulai :</label>
-                                            <input type="text" id="tanggal_mulai" name="tanggal_mulai" class="form-control datepicker" placeholder="Tanggal Mulai Semester" value="<?php if(isset($semester)) echo $semester->tanggal_mulai?>" required autofocus>
+                                            <input type="text" id="tanggal_mulai" name="tanggal_mulai" class="form-control datepicker" placeholder="Tanggal Mulai Semester" value="<?php if(isset($semester)) return $semester->tanggal_mulai?>" required autofocus>
                                         </div>
                                     </div>
                                 </div>
@@ -74,7 +74,7 @@
                                     <div class="col-12">
                                         <div class="form-group">
                                             <label>Masukkan Tanggal Selesai :</label>
-                                            <input type="text" id="tanggal_selesai" name="tanggal_selesai" class="form-control datepicker" placeholder="Tanggal Selesai Semester" value="<?php if(isset($semester)) echo $semester->tanggal_selesai?>" required autofocus>
+                                            <input type="text" id="tanggal_selesai" name="tanggal_selesai" class="form-control datepicker" placeholder="Tanggal Selesai Semester" value="<?php if(isset($semester)) return $semester->tanggal_selesai?>" required autofocus>
                                         </div>
                                     </div>
                                 </div>
