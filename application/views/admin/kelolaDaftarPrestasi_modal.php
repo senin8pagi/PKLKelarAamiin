@@ -100,7 +100,7 @@
                                     <div class="col-12">
                                         <div class="form-group">
                                             <label>Kode prestasi :</label>
-                                            <input type="text" id="kode_prestasi" name="kode_prestasi" class="form-control" placeholder="Masukkan kode prestasi" value="<?php if(isset($prestasi)) echo $prestasi->kode_prestasi?>" disabled required autofocus>
+                                            <input type="text" id="kode_prestasi" name="kode_prestasi" class="form-control" placeholder="Masukkan kode prestasi" value="<?php if(isset($prestasi)) return $prestasi->kode_prestasi?>" disabled required autofocus>
                                         </div>
                                     </div>
                                 </div>
@@ -111,7 +111,7 @@
                                             <select id="id_jenis_prestasi" name="id_jenis_prestasi" class="form-control" readonly required>
                                                 <option value="" selected disabled>-- Pilih Jenis Prestasi --</option>
                                                 <?php foreach($jenis_prestasi->result() as $row){?>
-                                                <option value="<?= $row->id_jenis_prestasi?>" <?php if(isset($prestasi) && $prestasi->id_jenis_prestasi == $row->id_jenis_prestasi) echo "selected"; else echo "disabled"?>><?= $row->jenis_prestasi?></option>
+                                                <option value="<?= $row->id_jenis_prestasi?>" <?php if(isset($prestasi) && $prestasi->id_jenis_prestasi == $row->id_jenis_prestasi) return "selected"; else return "disabled"?>><?= $row->jenis_prestasi?></option>
                                                 <?php } ?>
                                             </select>
                                         </div>
@@ -121,7 +121,7 @@
                                     <div class="col-12">
                                         <div class="form-group">
                                             <label>Prestasi :</label>
-                                            <input type="text" id="prestasi" name="prestasi" class="form-control" placeholder="Prestasi baru" value="<?php if(isset($prestasi)) echo $prestasi->prestasi?>" required autofocus>
+                                            <input type="text" id="prestasi" name="prestasi" class="form-control" placeholder="Prestasi baru" value="<?php if(isset($prestasi)) return $prestasi->prestasi?>" required autofocus>
                                         </div>
                                     </div>
                                 </div>
@@ -129,7 +129,7 @@
                                     <div class="col-6">
                                         <div class="form-group">
                                             <label>Skor Prestasi :</label>
-                                            <input type="text" id="skor_prestasi" name="skor_prestasi" class="form-control" placeholder="Skor prestasi" value="<?php if(isset($prestasi)) echo $prestasi->skor?>" required autofocus>
+                                            <input type="text" id="skor_prestasi" name="skor_prestasi" class="form-control" placeholder="Skor prestasi" value="<?php if(isset($prestasi)) return $prestasi->skor?>" required autofocus>
                                         </div>
                                     </div>
                                 </div>
