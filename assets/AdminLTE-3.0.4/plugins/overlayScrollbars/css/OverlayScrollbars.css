@@ -28,11 +28,11 @@ html.os-html > .os-host {
   position: absolute !important; /* could be position: fixed; but it causes issues on iOS (-webkit-overflow-scrolling: touch) */
 }
 html.os-html > .os-host > .os-padding {
-    position: absolute; /* could be position: fixed; but it causes issues on iOS (-webkit-overflow-scrolling: touch) */
+  position: absolute; /* could be position: fixed; but it causes issues on iOS (-webkit-overflow-scrolling: touch) */
 }
 body.os-dragging,
 body.os-dragging * {
-    cursor: default;
+  cursor: default;
 }
 .os-host,
 .os-host-textarea {
