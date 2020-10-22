@@ -24,7 +24,7 @@
 }
 
 .colorpicker.colorpicker-disabled,
-.colorpicker.colorpicker-disabled * { cursor: default !important; }
+.colorpicker.colorpicker-disabled { cursor: default !important; }
 
 .colorpicker div { position: relative; }
 
