@@ -721,8 +721,8 @@ $.extend( Scroller.prototype, {
 				true :
 				false;
 
-			if ( ( ajaxSourced && this.s.dt.iDraw == 2) ||
-			     (!ajaxSourced && this.s.dt.iDraw == 1) )
+			if ( ( ajaxSourced && this.s.dt.iDraw === 2) ||
+			     (!ajaxSourced && this.s.dt.iDraw === 1) )
 			{
 				setTimeout( function () {
 					$(that.dom.scroller).scrollTop( that.s.dt.oLoadedState.iScroller );
